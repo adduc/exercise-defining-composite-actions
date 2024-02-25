@@ -1,0 +1,13 @@
+name: (Dispatch) Example Action 1
+
+on:
+  workflow_dispatch:
+    inputs:
+      input_1:
+        description: input 1 description
+      input_2:
+        description: input 2 description
+
+jobs:
+  example-action-1:
+    uses: adduc/exercise-defining-github-actions/example-action-1@main

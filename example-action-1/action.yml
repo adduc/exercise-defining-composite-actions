@@ -1,0 +1,14 @@
+# @see https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions
+name: Example Action 1
+description: Example action 1 description
+
+inputs:
+  input_1: { description: input 1 description }
+  input_2: { description: input 2 description }
+
+runs:
+  using: composite
+  steps:
+    - name: Dump GitHub context
+      env: { GITHUB_CONTEXT: ${{ toJson(github) }} }
+      run: echo "$GITHUB_CONTEXT"
