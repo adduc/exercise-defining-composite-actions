@@ -15,8 +15,8 @@ runs:
       env:
         GITHUB_CONTEXT: ${{ toJson(github) }}
     - name: Run ls
-      run: ls -al
+      run: ls -al $GITHUB_ACTION_PATH
       shell: bash
     - name: Run script.sh
-      run: script.sh
+      run: $GITHUB_ACTION_PATH/script.sh
       shell: bash
