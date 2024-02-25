@@ -12,4 +12,4 @@ jobs:
   example-action-1:
     runs-on: ubuntu-latest
     steps:
-      - uses: adduc/exercise-defining-github-actions/example-action-1@main
+      - uses: adduc/exercise-defining-composite-actions/example-action-1@main
