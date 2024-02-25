@@ -5,8 +5,10 @@ on:
     inputs:
       input_1:
         description: input 1 description
+        type: string
       input_2:
         description: input 2 description
+        type: string
 
 jobs:
   example-action-1:
