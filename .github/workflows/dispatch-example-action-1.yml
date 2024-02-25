@@ -10,4 +10,6 @@ on:
 
 jobs:
   example-action-1:
-    uses: adduc/exercise-defining-github-actions/example-action-1@main
+    runs-on: ubuntu-latest
+    steps:
+      - uses: adduc/exercise-defining-github-actions/example-action-1@main
